@@ -1,0 +1,36 @@
+body{
+    margin:0px
+}
+.head{
+    background-color:rgba(39, 117, 190, 0.699);
+    font-size: 24px;
+    text-align:center;
+    padding: 20px
+    }
+.main{
+    background-color:#eeeeee;
+    display:flex; /* flex設定讓他變成左右排版 */
+    justify-content:center; /* 水平對齊, 可靠左中右 */
+    flex-wrap:wrap; /* 允許內部的區塊往下排列!!!!!!! */
+    padding: 20px;
+}
+.box{
+    background-color: #ccddee;
+    width:20%;margin:10px;
+    text-align:center;
+}
+/* CSS media query */
+@media (max-width:1250px){
+    /*如果螢幕寬度小於1250px，套用這個區塊的設定*/
+    .box{
+        width:45%;
+    }
+    }
+@media (max-width:500px){
+    .head{
+        font-size:24px;
+    }
+    .box{
+        width:90%;
+    }
+    }
